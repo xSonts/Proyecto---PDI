@@ -1,0 +1,25 @@
+# Entorno virtual
+venv/
+.env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Modelos pesados
+models/**/*.pth
+
+# Imágenes temporales
+*.jpg
+*.jpeg
+*.png
+uploads/
+output/
+
+# Archivos de logs
+*.log

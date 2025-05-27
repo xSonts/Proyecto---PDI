@@ -1,0 +1,88 @@
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
+  <title>Estilo Artístico por Emoción</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+
+</head>
+
+<body>
+  <header>
+    <h1>Transformación Artística Basada en Emoción</h1>
+    
+  </header>
+
+  <div class="container">
+    <button id="infoBtn"><i class="fa-solid fa-info"></i></button>
+    
+
+    <!-- Modal -->
+<div id="infoModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>¿Cómo posar?</h2>
+    
+    <img src="/static/uploads/referencia.jpg" alt="Guía de pose" class="pose-image" />
+    <p>Expresa una emoción  mirando directamente a la cámara, sin cubrir el rostro y descubre los diferentes estilos artisticos.</p>
+  </div>
+</div>
+    
+    <div class="interaccion">    
+    <h1>¿Alguna vez imaginaste que una expresión tuya pudiera convertirse en una obra de arte?</h1>
+    <h3>Según la emoción que expreses, tu imagen será transformada con un estilo artístico único, inspirado en distintas formas de ver y sentir el arte.
+Cada estilo tiene una historia, una energía y una manera especial de expresar lo humano. Después de tu transformación, podrás descubrir más sobre el estilo que te tocó.</h3>
+    <video id="video" autoplay playsinline></video>
+    <button id="capture">Tomar Foto</button>
+    </div>
+
+    
+
+
+
+
+    <h2>Resultado</h2>
+    <div id="loader" style="display: none;">
+    <div class="spinner"></div>
+    </div>
+    <div class="resultado-imagenes" id="resultado-imagenes" style="display: none;">
+      <div class="original-image">
+        <h4>Original</h4>
+        <img id="original-image" src="" alt="Imagen original" />
+      </div>
+      <div class="styled-image">
+        <h4>Estilizada</h4>
+        <img id="styled-image" src="" alt="Imagen estilizada" />
+      </div>
+    </div>
+
+    <div id="style-info" class="style-info"></div>
+    <div class="img-estilos">
+      <h3>Imágenes de Referencia</h3>
+      <div class="ukiyo" id="style-ukiyo" style="display: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Great_Wave_off_Kanagawa2.jpg/1200px-Great_Wave_off_Kanagawa2.jpg" alt=""></img>
+        <img src="https://s3.amazonaws.com/eventtia/event_files/38638/original/ukiyoe415975897521597589752.jpg?1597589752" alt=""></img>
+        <img src="https://www.japan-experience.com/sites/default/files/styles/scale_crop_760x556/public/legacy/japan_experience/1597160872342.jpg.webp?itok=raptFnTL" alt=""></img>
+        <img src="https://conoce-japon.com/wp-content/uploads/2013/05/ukiyo-e-4.jpg" alt=""></img>
+      </div>
+      <div class="popArt"  id="style-popart" style="display: none;">
+        <img src="https://palaciodegranda.com/wp-content/uploads/2017/07/marilyn-monroe-andy-warhol-300x300.jpg" alt=""></img>
+        <img src="https://matchpublicidad.com/wp-content/uploads/2021/09/image.png" alt=""></img>
+        <img src="/static/uploads/Andy-Warhol-obras.jpg" alt=""></img>
+        <img src="https://static.wixstatic.com/media/4d2547_2d7df7e88c2b4f9eaa959d9c5e4be68e~mv2.jpg/v1/fill/w_599,h_580,al_c,lg_1,q_80,enc_auto/4d2547_2d7df7e88c2b4f9eaa959d9c5e4be68e~mv2.jpg" alt=""></img>
+      </div>
+      <div class="puntillismo" id="style-puntillismo" style="display: none;">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*vGiwcxcwJiqF9_BTIejDFw.jpeg" alt=""></img>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTJIMSOT43wT9nzTh98zsJ5bytBqCTchwCfd_AK5ldjNmPZu40JyKUmJXcsNQjmQdgDamPoCre4Q-yiEQ7nug4ZJgONq913o2tKZBiXmh9kNKdaenP47gT4_gZF3QwPfAO9K9AC3QlNV82/s1600/hb_51.112.6.jpg" alt=""></img>
+        <img src="http://agorabierta.com/wp-content/uploads/2012/09/Scan-122390003.jpg" alt=""></img>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2XNmT5uP6XycI2u5plfw0GLJCcforklMd-t7GkCAtH0Vvlfht4G9OkVWpkgbml6agLvg&usqp=CAU" alt=""></img>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+
+</html>
