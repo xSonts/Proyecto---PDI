@@ -56,12 +56,12 @@ emotion-art-style-transfer/
    ```bash
    git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git
 
-Instala los requerimientos
+ 3.Instala los requerimientos
 ```bash
 -r requirements.txt
 ```
 
-Ejecuta la aplicación:
+ 4.Ejecuta la aplicación:
 ```bash
 python app.py
 ```
