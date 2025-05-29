@@ -55,15 +55,13 @@ emotion-art-style-transfer/
 2. Clona el repositorio de CycleGan
    ```bash
    git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git
-   
-Instala las dependencias:
-bash
-Copiar
-Editar
-pip install -r requirements.txt
-Ejecuta la aplicación:
 
-bash
-Copiar
-Editar
+Instala los requerimientos
+```bash
+-r requirements.txt
+```
+
+Ejecuta la aplicación:
+```bash
 python app.py
+```
