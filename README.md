@@ -17,3 +17,46 @@ Este proyecto permite al usuario tomarse una foto con la cámara web, detectar s
 | happy             | Puntillismo               |
 | sad               | Ukiyo-e                   |
 | neutral           | Pop Art                   |
+
+## 📁 Estructura del proyecto
+
+emotion-art-style-transfer/
+│
+├── app.py # Backend principal en Flask
+├── templates/ # HTML con Jinja2
+│ └── index.html
+│ └── result.html
+├── static/ # Archivos estáticos (CSS, JS, etc.)
+├── models/ # Checkpoints de modelos CycleGAN
+│ ├── puntillismo/
+│ ├── ukiyo/
+│ └── popart/
+├── utils/ # Funciones de inferencia y preprocesamiento
+│ ├── preprocess.py
+│ └── style_transfer.py
+├── uploads/ # Carpeta temporal para imágenes de usuario
+├── output/ # Carpeta para resultados estilizados
+├── requirements.txt # Librerías necesarias
+├── .gitignore # Archivos ignorados por git
+└── README.md # Este archivo
+
+## 🚀 Cómo ejecutar
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/xSonts/Proyecto---PDI.git
+2. Clona el repositorio de CycleGan
+   ```bash
+   git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git
+   
+Instala las dependencias:
+bash
+Copiar
+Editar
+pip install -r requirements.txt
+Ejecuta la aplicación:
+
+bash
+Copiar
+Editar
+python app.py
