@@ -22,23 +22,30 @@ Este proyecto permite al usuario tomarse una foto con la cámara web, detectar s
 
 emotion-art-style-transfer/
 │
-├── app.py # Backend principal en Flask
-├── templates/ # HTML con Jinja2
-│ └── index.html
-│ └── result.html
-├── static/ # Archivos estáticos (CSS, JS, etc.)
-├── models/ # Checkpoints de modelos CycleGAN
-│ ├── puntillismo/
-│ ├── ukiyo/
-│ └── popart/
-├── utils/ # Funciones de inferencia y preprocesamiento
-│ ├── preprocess.py
-│ └── style_transfer.py
-├── uploads/ # Carpeta temporal para imágenes de usuario
-├── output/ # Carpeta para resultados estilizados
-├── requirements.txt # Librerías necesarias
-├── .gitignore # Archivos ignorados por git
-└── README.md # Este archivo
+├── app.py                      # Backend principal con Flask
+├── requirements.txt            # Dependencias del proyecto
+├── .gitignore                  # Archivos/carpetas ignorados por git
+├── README.md                   # Documentación del proyecto
+│
+├── templates/                  # Plantillas HTML con Jinja2
+│   ├── index.html
+│   └── result.html
+│
+├── static/                     # Archivos estáticos (CSS, JS, imágenes)
+│
+├── models/                     # Checkpoints de modelos CycleGAN
+│   ├── puntillismo/
+│   ├── ukiyo/
+│   └── popart/
+│
+├── utils/                      # Módulos de utilidad para preprocesamiento e inferencia
+│   ├── preprocess.py
+│   └── style_transfer.py
+│
+├── uploads/                    # Imágenes temporales de entrada del usuario
+│
+└── output/                     # Resultados generados por el modelo
+
 
 ## 🚀 Cómo ejecutar
 
